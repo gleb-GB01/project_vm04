@@ -1,5 +1,8 @@
+# обучение цикл while
 name = input('Кто создатель python?')
-if name =='Гвидо':
-    print('Правильно')
-else:
-    print('Неверно')
+while name != 'Гвидо':
+    print('Неправильно')
+    name = input('Кто создатель python?')
+print('Правильно')
+
+ 
