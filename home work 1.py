@@ -15,19 +15,13 @@
 name = 'Вася'
 sur_name = 'пупкин'
 age = int(input('Введите Возраст: '))
-
-if age <= 30:
-    veight = int(input('Введите Вес: '))
-    if 50 <= veight < 120:
-        print(name, age, 'год, ', 'вес', veight, '- Вы в хорошем состоянии')
-elif age > 30:
-    veight = int(input('Введите Вес: '))
-    if 50 > veight > 120:
-        print(name, age, 'год, ', 'вес', veight, '- Вам следует заняться собой')
-elif age > 40:
-    veight = int(input('Введите Вес: '))
-    if 50 <= veight < 120:
-        print(name, age, 'год, ', 'вес', veight, '- Вам требуется врачебный осмотр')
+veight = int(input('Введите Вес: '))
+if age <= 30 and 50 <= veight < 120:
+    print(name, age, 'год, ', 'вес', veight, '- Вы в хорошем состоянии')
+elif age > 30 and 50 > veight > 120:
+    print(name, age, 'год, ', 'вес', veight, '- Вам следует заняться собой')
+elif age > 40 and 50 <= veight < 120:
+    print(name, age, 'год, ', 'вес', veight, '- Вам требуется врачебный осмотр')
 
 
 
